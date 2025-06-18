@@ -1,0 +1,39 @@
+$home-board-color: #efeeee;
+$header-color: #005b8c;
+$font-color: #ffffff;
+$label-font-color: #000000;
+$button-font-color: #ffffff;
+$button-color: #5e97ba;
+$modal-color: #ffffff;
+$input-border-color: #4f4f4f;
+$warning-color: #ff0000;
+$inner-bar-color: #ffffff;
+$outer-bar-color: #005b8c;
+$shadow-color: #3f3f3f;
+$list-bg-color: #d7d7d7;
+$list-link-color: #707070;
+$list-title-color: #333232;
+$card-bg-color: #ffffff;
+
+@mixin make-border-box($padding-value) {
+    padding: $padding-value;
+    box-sizing: border-box;
+}
+
+@mixin make-bold-font($size, $color) {
+    color: $color;
+    font-size: $size;
+    font-weight: bold;
+}
+
+@mixin raduis-without-border($radius) {
+    border: none;
+    border-radius: $radius;
+}
+
+@mixin input-style($width) {
+    height: 36px;
+    width: $width;
+    border: 1px solid $input-border-color;
+    border-radius: 10px;
+}

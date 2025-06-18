@@ -1,0 +1,19 @@
+@import "../../../../common/StyleVariables.scss";
+
+.board-link {
+    text-decoration: none;
+    height: 90px;
+    align-self: start;
+    margin-bottom: 30px;
+    margin-left: 30px;
+
+    .task-board {
+        width: 320px;
+        height: 100%;
+        box-shadow: 5px 5px 5px $shadow-color;
+        overflow: hidden;
+        @include make-bold-font(20px, $font-color);
+        @include make-border-box(12px 20px);
+        @include raduis-without-border(10px);
+    }
+}

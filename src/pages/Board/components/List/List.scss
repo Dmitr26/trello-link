@@ -1,0 +1,56 @@
+@import "../../../../common/StyleVariables.scss";
+
+.list-body {
+    background-color: $list-bg-color;
+    min-width: 380px;
+    min-height: 90px;
+    max-height: 560px;
+    margin: 10px;
+    overflow: auto;
+    box-shadow: 5px 5px 5px $shadow-color;
+    @include make-border-box(15px);
+    @include raduis-without-border(15px);
+
+    .listTop {
+        display: flex;
+
+        .listTitle {
+            width: 95%;
+            margin-bottom: 15px;
+            @include make-bold-font(18px, $list-title-color);
+        }
+    }
+
+    .slot {
+        min-width: 360px;
+        min-height: 130px;
+        background-color: #a9a9a9;
+        @include raduis-without-border(10px);
+    }
+
+    .cardsArea {
+        min-height: 30px;
+        margin-bottom: 15px;
+
+        .card-with-slot {
+            margin-bottom: 15px;
+
+            .slot {
+                min-width: 360px;
+                min-height: 130px;
+                background-color: #a9a9a9;
+                margin-bottom: 20px;
+                @include raduis-without-border(10px);
+            }
+        }
+    }
+
+    button {
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        @include make-bold-font(14px, $list-link-color);
+    }
+}

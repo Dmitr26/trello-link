@@ -1,0 +1,26 @@
+@import "../../../../common/StyleVariables.scss";
+
+.progress-bar {
+    position: relative;
+    width: 1000px;
+    height: 4em;
+    margin: 80px auto;
+    background-color: $outer-bar-color;
+    @include raduis-without-border(3.5em);
+
+    &::before {
+        content: '';
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: .5em;
+        top: .5em;
+        bottom: .5em;
+        width: calc(var(--width, 0) * 1%);
+        min-width: 2rem;
+        max-width: calc(100% - 1em);
+        background-color: $inner-bar-color;
+        @include raduis-without-border(3.5em);
+        padding: 1em;
+    }
+}

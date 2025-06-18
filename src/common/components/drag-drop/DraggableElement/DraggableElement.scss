@@ -1,0 +1,7 @@
+.dragElement {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transition-property: top, left;
+    will-change: top, left;
+}
